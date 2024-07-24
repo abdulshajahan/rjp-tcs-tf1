@@ -13,12 +13,12 @@ resource "aws_instance" "vm" {
 resource "aws_s3_bucket" "s3b1" {
   bucket = "${var.ui}tests3211"
 }
+variable "ui" {
+  description = "supply value"
+}
 */
 
 resource "aws_s3_bucket" "b11" {
   bucket = "rjppsomename1234"
 }
 
-variable "ui" {
-  description = "supply value"
-}
